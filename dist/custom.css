@@ -1,0 +1,179 @@
+nav details summary {
+  list-style: none;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Slide in effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.data-list-wrap {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 2em; /* Adjust this based on your text size */
+}
+
+/* animation for the appeareance one by one */
+.data-list-wrap-item {
+  position: absolute;
+  opacity: 0;
+  animation: showHide 12s infinite;
+}
+
+.data-list-one {
+  animation-delay: 0s;
+}
+
+.data-list-two {
+  animation-delay: 4s;
+}
+
+.data-list-three {
+  animation-delay: 8s;
+}
+
+@keyframes showHide {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* /// */
+
+.intellipaat-partners-items {
+  list-style: none;
+}
+
+.partner-logo {
+  width: auto; /* Adjust as needed */
+  height: 80px;
+  /* Maintain aspect ratio */
+}
+
+/* slider aimation */
+.carousel-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel-slide {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: calc(100% / 4); /* Adjust this based on your grid layout */
+  scroll-snap-align: start;
+  margin-right: 1rem; /* Adjust gap as needed */
+}
+
+@media (max-width: 1024px) {
+  .carousel-item {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .carousel-item {
+    width: 100%;
+  }
+}
+
+/* //paralelxeffect */
+/* #parallax-section {
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.parallax-item {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 1s, opacity 1s;
+} */
+
+/* logo animation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.overflow-auto {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.overflow-auto:before,
+.overflow-auto:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.overflow-auto:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.overflow-auto:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.overflow-auto:hover .track {
+  animation-play-state: paused;
+}
+
+.track {
+  display: inline-block;
+  animation: marquee 35s linear infinite;
+}
+
+.track li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.track img {
+  height: 50px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
