@@ -76,3 +76,59 @@ window.addEventListener("scroll", function () {
   parallax.style.backgroundPositionY = offset * 0.7 + "px";
   // DIV 1 background will move slower than other elements on scroll.
 });
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+document.addEventListener("scroll", function () {
+  const panel1 = this.getElementById("panel1");
+  const panel2 = this.getElementById("panel2");
+  const scrollY1 = window.scrollY;
+  const panelT = panel2.offsetTop;
+  const panelB = panel2.offsetHeight;
+  if (scrollY1 >= panelT) {
+    panel1.style.position = "sticky";
+    panel1.style.top = "0";
+  }
+});
+document.addEventListener("scroll", function () {
+  const panel1 = this.getElementById("panel2");
+  const panel2 = this.getElementById("panel3");
+  const scrollY1 = window.scrollY;
+  const panelT = panel2.offsetTop;
+  const panelB = panel2.offsetHeight;
+  if (scrollY1 >= panelT) {
+    panel1.style.position = "sticky";
+    panel1.style.top = "0";
+  }
+});
+document.addEventListener("scroll", function () {
+  const panel1 = this.getElementById("panel3");
+  const panel2 = this.getElementById("panel4");
+  const scrollY1 = window.scrollY;
+  const panelT = panel2.offsetTop;
+  const panelB = panel2.offsetHeight;
+  if (scrollY1 >= panelT) {
+    panel1.style.position = "sticky";
+    panel1.style.top = "0";
+  }
+});

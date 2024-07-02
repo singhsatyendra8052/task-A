@@ -112,11 +112,6 @@ nav details summary {
 } */
 
 /* logo animation */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background: #f2f2f2;
@@ -176,4 +171,16 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* paralleaxeffect */
+.parallax-item {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.parallax-item.sticky {
+  position: sticky;
+  top: 0;
 }
