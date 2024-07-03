@@ -101,21 +101,22 @@ const swiper = new Swiper(".swiper", {
 
 document.addEventListener("scroll", function () {
   const panel1 = this.getElementById("panel1");
-  const panel2 = this.getElementById("panel2");
+
   const scrollY1 = window.scrollY;
-  const panelT = panel2.offsetTop;
-  const panelB = panel2.offsetHeight;
-  if (scrollY1 >= panelT) {
+
+  const panelT1 = panel1.offsetTop;
+
+  if (scrollY1 >= panelT1) {
     panel1.style.position = "sticky";
     panel1.style.top = "0";
   }
 });
 document.addEventListener("scroll", function () {
   const panel1 = this.getElementById("panel2");
-  const panel2 = this.getElementById("panel3");
+
   const scrollY1 = window.scrollY;
-  const panelT = panel2.offsetTop;
-  const panelB = panel2.offsetHeight;
+  const panelT = panel1.offsetTop;
+
   if (scrollY1 >= panelT) {
     panel1.style.position = "sticky";
     panel1.style.top = "0";
@@ -123,10 +124,10 @@ document.addEventListener("scroll", function () {
 });
 document.addEventListener("scroll", function () {
   const panel1 = this.getElementById("panel3");
-  const panel2 = this.getElementById("panel4");
+
   const scrollY1 = window.scrollY;
-  const panelT = panel2.offsetTop;
-  const panelB = panel2.offsetHeight;
+  const panelT = panel1.offsetTop;
+
   if (scrollY1 >= panelT) {
     panel1.style.position = "sticky";
     panel1.style.top = "0";
