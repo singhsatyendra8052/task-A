@@ -133,3 +133,22 @@ document.addEventListener("scroll", function () {
     panel1.style.top = "0";
   }
 });
+
+function transformDiv(translateValue, buttonId) {
+  // Update the transform property of the contentDiv
+  const contentDiv = document.getElementById("contentDiv");
+  contentDiv.style.transform = `translate3d(0px, ${translateValue}px, 0px)`;
+
+  // Update button styles
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach((button) => {
+    const h4 = button.querySelector("h4");
+    if (button.id === buttonId) {
+      h4.classList.remove("text-gray-650", "font-normal");
+      h4.classList.add("text-gray-800", "font-semibold");
+    } else {
+      h4.classList.remove("text-gray-800", "font-semibold");
+      h4.classList.add("text-gray-650", "font-normal");
+    }
+  });
+}
