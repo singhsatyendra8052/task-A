@@ -184,3 +184,17 @@ body {
   position: sticky;
   top: 0;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+}

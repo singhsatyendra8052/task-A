@@ -38,36 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const section = document.getElementById("parallax-section");
-//   const items = section.querySelectorAll(".parallax-item");
-
-//   function isElementInViewport(el) {
-//     const rect = el.getBoundingClientRect();
-//     return (
-//       rect.top >= 0 &&
-//       rect.left >= 0 &&
-//       rect.bottom <=
-//         (window.innerHeight || document.documentElement.clientHeight) &&
-//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-//   }
-
-//   function applyParallaxEffect() {
-//     items.forEach((item, index) => {
-//       if (isElementInViewport(section)) {
-//         setTimeout(() => {
-//           item.style.transform = "translateY(0)";
-//           item.style.opacity = "1";
-//         }, index * 300); // delay each item by 300ms
-//       }
-//     });
-//   }
-
-//   window.addEventListener("scroll", applyParallaxEffect);
-//   applyParallaxEffect(); // initial check in case section is already in view
-// });
-
 const parallax = document.getElementById("panel1");
 
 // Parallax Effect for DIV 1
@@ -77,25 +47,36 @@ window.addEventListener("scroll", function () {
   // DIV 1 background will move slower than other elements on scroll.
 });
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "vertical",
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
   loop: true,
-
-  // If we need pagination
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
   },
 });
 
