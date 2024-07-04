@@ -139,8 +139,8 @@ function transformDiv(translateValue, buttonId) {
   const contentDiv = document.getElementById("contentDiv");
   contentDiv.style.transform = `translate3d(0px, ${translateValue}px, 0px)`;
 
-  // Update button styles
-  const buttons = document.querySelectorAll("button");
+  // Get all buttons and iterate over them
+  const buttons = document.querySelectorAll(".flex-col button");
   buttons.forEach((button) => {
     const h4 = button.querySelector("h4");
     if (button.id === buttonId) {
