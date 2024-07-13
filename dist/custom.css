@@ -58,10 +58,6 @@ nav details summary {
 }
 /* /// */
 
-.intellipaat-partners-items {
-  list-style: none;
-}
-
 .partner-logo {
   width: auto; /* Adjust as needed */
   height: 80px;
@@ -198,3 +194,20 @@ body {
   flex-shrink: 0;
   width: auto;
 }
+
+/* hidden scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* underline the footer item */
+/* .hover-underline .hover-item {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: gray;
+}
+
+.hover-underline .hover-item:hover {
+  text-decoration: underline;
+  color: white;
+} */
