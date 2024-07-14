@@ -180,7 +180,7 @@ body {
   position: sticky;
   top: 0;
 }
-.swiper {
+/* .swiper {
   width: 100%;
   height: 100%;
 }
@@ -193,21 +193,9 @@ body {
 .swiper-slide {
   flex-shrink: 0;
   width: auto;
-}
+} */
 
 /* hidden scrollbar */
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
 }
-
-/* underline the footer item */
-/* .hover-underline .hover-item {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  color: gray;
-}
-
-.hover-underline .hover-item:hover {
-  text-decoration: underline;
-  color: white;
-} */
