@@ -129,7 +129,8 @@
                         style="height: 408px"
                       >
                         <div
-                          class="flex gap-2  hover:bg-[#F8F8F8] rounded justify-between p-2 items-center cursor-pointer hover:border-b-2 hover:border-[#E97862]"
+                          class="c1course flex gap-2  hover:bg-[#F8F8F8] rounded justify-between p-2 items-center cursor-pointer hover:border-b-2 hover:border-[#E97862]"
+                          onclick='toggle("c1","c11")'
                         >
                           <div class="flex flex-row gap-4 items-center">
                             <div class="!w-9 !h-9 flex">
@@ -164,6 +165,7 @@
                         </div>
                         <div
                           class="flex gap-2 hover:bg-gray-100 rounded justify-between p-2 items-center cursor-pointer false hover:border-b-2 hover:border-[#E97862]"
+                          onclick='toggle("c1","c22")'
                         >
                           <div class="flex flex-row gap-4 items-center">
                             <div class="!w-9 !h-9 flex">
@@ -198,6 +200,7 @@
                         </div>
                         <div
                           class="flex gap-2 hover:bg-gray-100 rounded justify-between p-2 items-center cursor-pointer hover:border-b-2 hover:border-[#E97862]"
+                          onclick='toggle("c1","c33")'
                         >
                           <div class="flex flex-row gap-4 items-center">
                             <div class="!w-9 !h-9 flex">
@@ -232,6 +235,7 @@
                         </div>
                         <div
                           class="flex gap-2 hover:bg-gray-100 rounded justify-between p-2 items-center cursor-pointer hover:border-b-2 hover:border-[#E97862]"
+                          onclick='toggle("c1","c44")'
                         >
                           <div class="flex flex-row gap-4 items-center">
                             <div class="!w-9 !h-9 flex">
@@ -266,6 +270,7 @@
                         </div>
                         <div
                           class="flex gap-2 hover:bg-gray-100 rounded justify-between p-2 items-center cursor-pointer hover:border-b-2 hover:border-[#E97862]"
+                          onclick="toggle('c1','c55')"
                         >
                           <div class="flex flex-row gap-4 items-center">
                             <div class="!w-9 !h-9 flex">
@@ -300,6 +305,7 @@
                         </div>
                         <div
                           class="flex gap-2 hover:bg-gray-100 rounded justify-between p-2 items-center cursor-pointer hover:border-b-2 hover:border-[#E97862]"
+                          onclick="toggle('c1','c66')"
                         >
                           <div class="flex flex-row gap-4 items-center">
                             <div class="!w-9 !h-9 flex">
@@ -334,7 +340,8 @@
                         </div>
                       </div>
                       <div
-                        class="flex flex-col flex-grow w-full pl-3 pt-3 pr-9 gap-y-[20px] hover:border-b-2 hover:border-[#E97862]"
+                       id="c11"
+                        class="c1 flex flex-col flex-grow w-full pl-3 pt-3 pr-9 gap-y-[20px] hover:border-b-2 hover:border-[#E97862]"
                       >
                         <div
                           class="overflow-y-scroll"
@@ -488,7 +495,218 @@
                           </div>
                         </div>
                       </div>
+                      <div  id="c22" class="c1  flex-col flex-grow w-full pl-3 pt-3 pr-9 gap-y-[20px] hidden">
+                        <div class="overflow-y-scroll" style="max-height: 384px; height: 384px;">
+                            <div class="flex flex-col gap-5 h-full">
+                                <div class="flex flex-col gap-9">
+                                    <div class="flex gap-4 h-[30px] border-b border-b-[#EFEFEF]">
+                                        <div class="p-1 h-fit border-b border-b-black cursor-pointer">
+                                            <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold text-gray-900">Paid</p>
+                                        </div>
+                                        <div class="p-1 h-fit cursor-pointer">
+                                            <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold text-gray-400">Free</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-y-3 gap-x-4 flex-wrap">
+                                        <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/d925354a-6534-4e8e-a3ab-82c54b9cad2d.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                            <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Full Stack Development Course</p>
+                                        </div>
+                                        <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/ff845e53-0788-47db-9532-528a58192ba3.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                            <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">DevOps and Cloud Computing Course</p>
+                                        </div>
+                                        <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/d1b67c13-74cb-49b3-9c26-6964267702d0.svg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                            <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">UI/UX Design Course</p>
+                                        </div>
+                                        <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/3cf0abc7-8210-4c9a-9f5d-5064d8ade6ad.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                            <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Full Stack Development Course - Hinglish</p>
+                                        </div>
+                                        <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/67a13b5e-8ca5-41d2-9c25-bc0754d42dab.png" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                            <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Full Stack Web Development Program (Offline)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-1 py-1 px-2 border-b border-b-orange-500 w-fit cursor-pointer">
+                                    <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-semibold text-orange-500">All Courses</p>
+                                    <svg class="w-6 h-6 text-orange-500" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M268 112L412 256L268 400" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M392 256H100" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div id="c33" class="c1 flex-col flex-grow w-full pl-3 pt-3 pr-9 gap-y-[20px] hidden">
+                      <div class="overflow-y-scroll" style="max-height: 384px; height: 384px;">
+                        <div class="flex flex-col gap-5 h-full">
+                          <div class="flex flex-col gap-9">
+                            <div class="flex gap-4 h-[30px] border-b border-b-[#EFEFEF]">
+                              <div class="p-1 h-fit border-b border-b-black cursor-pointer" >
+                                <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold text-gray-900">Paid</p>
+                              </div>
+                              <div class="p-1 h-fit cursor-pointer" >
+                                <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold text-gray-400">Free</p>
+                              </div>
+                            </div>
+                            <div  class="flex gap-y-3 gap-x-4 flex-wrap">
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/a7f78e5d-71b2-4c4c-b6f4-ead81246c016.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Post Graduate Certification in Banking, Financial Services & Insurance</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/2b7b04a3-1b12-4ef7-8dcf-552c8f48c41b.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">TallyPrime Advance with GST Accounting (Tally Certification)</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/3b1306c7-81e4-432f-9598-cc989ad3fdb8.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">TallyPrime Basic with GST Essentials (Tally Certification)</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/b591b524-a488-4f73-8cdc-e879b7fdba0d.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Financial Mastery Analysis & Modeling</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/5ae54b81-645a-4e14-891b-70abd5869cc7.png" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Comprehensive Financial Modeling Course</p>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="flex gap-1 py-1 px-2 border-b border-b-orange-500 w-fit cursor-pointer">
+                            <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-semibold text-orange-500">All Courses</p>
+                            <svg class="w-6 h-6 text-orange-500 " viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M268 112L412 256L268 400" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M392 256H100" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="c44"class="c1  flex-col flex-grow w-full pl-3 pt-3 pr-9 gap-y-[20px] hidden">
+                      <div class="overflow-y-scroll" style="max-height: 384px; height: 384px;">
+                        <div class="flex flex-col gap-5 h-full">
+                          <div class="flex flex-col gap-9">
+                            <div class="flex gap-4 h-[30px] border-b border-b-[#EFEFEF]">
+                              <div class="p-1 h-fit border-b border-b-black cursor-pointer" >
+                                <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold text-gray-900">Paid</p>
+                              </div>
+                            </div>
+                            <div  class=" flex gap-y-3 gap-x-4 flex-wrap">
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/12f3625c-956a-4de0-af33-f6b20fb36bd4.png" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Decode C++ with DSA Course</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/37b7725b-333e-4406-93dd-e94812862210.png" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Decode Java with DSA Course</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/d183e6ac-6a33-407b-901f-07ca352b78cc.png" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Decode Python with DSA Course</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/c1cea705-52d8-4fb7-ae91-b016c8b49ea4.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Computer Science And Programming Fundamentals</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/3fefdd43-ed28-4446-925f-b05d568fecf4.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Mastering Cloud Technology for Websites</p>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="flex gap-1 py-1 px-2 border-b border-b-orange-500 w-fit cursor-pointer">
+                            <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-semibold text-orange-500">All Courses</p>
+                            <svg class="w-6 h-6 text-orange-500" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M268 112L412 256L268 400" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M392 256H100" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="c55"class="c1 flex flex-col flex-grow w-full pl-3 pt-3 pr-9 gap-y-[20px] hidden">
+                      <div class="overflow-y-scroll" style="max-height: 384px; height: 384px;">
+                        <div class="flex flex-col gap-5 h-full">
+                          <div class="flex flex-col gap-9">
+                            <!-- Filter Header -->
+                            <div class="flex gap-4 h-[30px] border-b border-b-[#EFEFEF]">
+                              <div class="p-1 h-fit border-b border-b-black cursor-pointer">
+                                <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold text-gray-900">Paid</p>
+                              </div>
+                              <!-- Add Free button if needed -->
+                              <div class="p-1 h-fit cursor-pointer">
+                                <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold text-gray-400">Free</p>
+                              </div>
+                            </div>
+                            <!-- Course List -->
+                            <div class="flex gap-y-3 gap-x-4 flex-wrap">
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/ba885f67-5843-46e1-85ac-f4592c381082.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Product Management with Gen AI</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/c9880f5d-2f91-43b8-894f-92e8bcac4a01.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">Digital Marketing With AI</p>
+                              </div>
+                              <!-- Add more courses if needed -->
+                            </div>
+                            <!-- Footer Link -->
+                            <div class="flex gap-1 py-1 px-2 border-b border-b-orange-500 w-fit cursor-pointer">
+                              <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-semibold text-orange-500">All Courses</p>
+                              <svg class="w-6 h-6 text-orange-500 " viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M268 112L412 256L268 400" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M392 256H100" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="c66" class="c1 flex-col flex-grow w-full pl-3 pt-3 pr-9 gap-y-[20px] hidden">
+                      <div class="overflow-y-scroll" style="max-height: 384px; height: 384px;">
+                        <div class="flex flex-col gap-5 h-full">
+                          <div class="flex flex-col gap-9">
+                            
+                            <div class="flex gap-4 h-[30px] border-b border-b-[#EFEFEF]">
+                              <div class="p-1 h-fit border-b border-b-black cursor-pointer">
+                                <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold text-gray-900">Paid</p>
+                              </div>
+                             
+                            </div>
+                            
+                            <div class="flex gap-y-3 gap-x-4 flex-wrap">
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/d210b069-b963-4130-9729-021e2d18f4a3.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">B.Voc. in Medical Lab Technology (Offline)</p>
+                              </div>
+                              <div class="flex gap-3 py-2 pl-2 pr-3 border border-[#EFEFEF] bg-white rounded cursor-pointer items-center">
+                                <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/d2fe7273-b24e-4cde-9319-d6d6986ab357.jpeg" alt="Course Icon" style="width: 44px; height: 44px; border-radius: 4px;">
+                                <p class="text-gray-900 text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-bold" style="width: 203px;">B.Voc. in Operation Theater Technology (Offline)</p>
+                              </div>
+                              
+                            </div>
+                            
+                            <div class="flex gap-1 py-1 px-2 border-b border-b-orange-500 w-fit cursor-pointer">
+                              <p class="text-xs medium:text-sm leading-[18px] medium:leading-[22px] font-semibold text-orange-500">All Courses</p>
+                              <svg class="w-6 h-6 text-orange-500 " viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M268 112L412 256L268 400" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M392 256H100" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    
                   </div>
                   <div class="min-h-[20rem] w-64 hidden">
                     <ul class="list-none w-full"></ul>
@@ -497,7 +715,7 @@
                     <ul class="list-none w-full"></ul>
                   </div>
                 </div>
-              </div>
+              
             </details>
             <!-- <div class="group flex flex-row">
               
